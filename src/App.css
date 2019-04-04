@@ -1,0 +1,109 @@
+*{
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+:focus,:active,::before,::after{
+  outline: none;
+}
+
+body{
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+a{
+  color:#111;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+  
+}
+
+.container{
+  height: 100vh;
+  width:80%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+main{
+  display: flex;
+}
+
+main section{
+  flex:.8;
+}
+nav{
+  padding:1rem 0rem;
+}
+
+.text_blue{
+  color:cadetblue
+}
+ul{
+  display: flex;
+  border-bottom: 1px solid #ebebeb;
+}
+li{
+  flex: 1;
+  padding: 1rem;
+}
+.btn_delete{
+
+  color:red;
+}
+
+
+main{
+  display: flex;
+  width: 90%;
+  margin:auto;
+  padding-top: 3rem;
+}
+main section{
+  flex:1;
+}
+main .text article{
+
+width: 30rem;
+
+padding:3rem;
+}
+
+main .text h1{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 4.5rem;
+}
+main .text p{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  padding-bottom: 2rem;
+}
+
+main section img{
+ 
+  width:100%;
+
+  
+}
+
+.logout{
+  float: right;
+  margin:1rem;
+  background: none;
+  border:none;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  line-height: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
