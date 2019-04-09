@@ -11,7 +11,7 @@
 After Downloading the project make sure to have following environment present on your system
 
 ```
-[Node JS](https://nodejs.org/en/download/) - The Environment used download and install depending on your operating system
+[`Node JS`](https://nodejs.org/en/download/) - The Environment used download and install depending on your operating system
 ```
 Also make sure to have a `Firebase Project` 
 
