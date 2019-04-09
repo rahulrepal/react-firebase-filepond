@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React-Firebase-Storage
+  The Cloud Storage app as the name suggests store the data which can be in any file format like excel,docs, txt, jpeg, png, json etc. on the cloud. We provide a basic functionality to upload, download and delete the files as well as user authentication so that only authentic users can use these functionalities.
 
-## Available Scripts
+## Getting Started
+  clone or download the file. Traverse to the directory containing the project in your command prompt. use `npm start` to start the project it will automatically open the application on your default browser at `localhost:3000`.
 
-In the project directory, you can run:
+<img src="screenshot/login.JPG" width=800px>
 
-### `npm start`
+### Prerequisites
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+After Downloading the project make sure to have following environment present on your system
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```
+[Node JS](https://nodejs.org/en/download/) - The Environment used download and install depending on your operating system
+```
+Also make sure to have a `Firebase Project` 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installing
 
-### `npm run build`
+When you have your environment ready  Traverse to the directory containing the project in your command prompt then enter following commands.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm install - installs all the dependencies present
+npm start   
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Also configure your firebase project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+- Turn on Google Authentication from Firebase Authentication [Google Authenticatio](https://firebase.google.com/docs/auth/web/google-signin).
+- Initialize Firebase Storage and Firebase Realltime database. Make sure to allow all read and writes during development.
+- Copy and the [Firebase Configuration](https://firebase.google.com/docs/web/setup) in `src/config/store`
+```
 
-### `npm run eject`
+You are ready to go :wink:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
