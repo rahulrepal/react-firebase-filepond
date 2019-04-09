@@ -22,18 +22,67 @@ export class Provider extends Component{
     this.authStateListner();
     }
        
-      authStateListner=()=>{
-        MyStore.auth().onAuthStateChanged((user)=>{
+
+ authStateListner=()=>{
+    MyStore.auth().onAuthStateChanged((user)=>{
              if(user){
                  this.setState({user:user});
 
+                 this.database.child(this.state.user.uid).child("files").on('value',snap=>{
+                    //console.log(snap.val())
+                    let myArr=[]
+        
+                    console.log(snap.val())
+                    for(const key in snap.val()){
+                        myArr.push(Object.assign({},snap.val()[key].metadataFile,{key:key}));
+                        console.log(snap.val()[key].metadataFile);
+                    }
+
+                    console.log("hey")
+        
+                    if(snap.val()!=null){
+                        this.setState({
+                            myFiles:myArr
+                        })
+                    }
+                    else{
+                        this.setState({
+                            myFiles:[]
+                        })
+                    }
+                   
+                 });
+                 
+                 this.database.child(this.state.user.uid).child("log").on('value',snap=>{
+                    //console.log(snap.val())
+                    let myArr=[]
+        
+                    console.log(snap.val())
+                    for(const key in snap.val()){
+                        myArr.push(snap.val()[key].action);
+                       // console.log(snap.val()[key].metadataFile);
+                    }
+
+                    console.log("hey")
+        
+                    if(snap.val()!=null){
+                        this.setState({
+                            logs:myArr
+                        })
+                    }
+                    else{
+                        this.setState({
+                            logs:[]
+                        })
+                    }
+                   
+                 });
              }
              else{
-                 this.setState({user:null})
+                 this.setState({user:null,todos:[]})
              }
          })
       }
-
       componentDidMount(){
 
     
@@ -45,8 +94,8 @@ export class Provider extends Component{
     state={
       
         user:{},
-    
-   
+        myFiles:[],
+        logs:[],
 
         dispatch:action=>{
             this.setState(state=>reducer(state,action))

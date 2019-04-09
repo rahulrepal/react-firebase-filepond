@@ -36,14 +36,29 @@ main{
 }
 
 main section{
-  flex:.8;
+  flex:.7;
+}
+aside{
+  flex:.3;
+
+
+  height: 30rem;
+  overflow-y:scroll;
 }
 nav{
   padding:1rem 0rem;
 }
-
 .text_blue{
-  color:cadetblue
+  color:#007BFF;
+}
+.button_blue{
+  color:white;
+  padding:1rem 2rem;
+  background-color:#007BFF;
+  border-radius:5px;
+}
+.delete{
+  color:#ebebeb;
 }
 ul{
   display: flex;
@@ -55,6 +70,10 @@ li{
 }
 .btn_delete{
 
+  color:#777;
+  cursor: pointer;
+}
+.btn_delete:hover{
   color:red;
 }
 
@@ -106,4 +125,33 @@ main section img{
   line-height: 2rem;
   font-size: 1rem;
   cursor: pointer;
+}
+.myFile{
+  width:10rem;
+  background-color:#fbfbfb;
+  text-align: center;
+  padding:1rem;
+  margin:1rem;
+  display: inline-block;
+}
+
+.myFile img{
+  width:4rem;
+}
+
+.myFile .info *{
+  margin:.5rem;
+}
+
+.logs *{
+  margin:1rem 0rem;
+}
+
+.log{
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem
+
+
 }

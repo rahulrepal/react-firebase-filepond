@@ -42,7 +42,7 @@ class login extends Component{
 
                             <main>
                             <section className="image">
-                                <img src="static/asset/hero.png" />
+                                <img src="static/asset/hero2.png" />
                             </section>
                     <section className="text">
                         <article>

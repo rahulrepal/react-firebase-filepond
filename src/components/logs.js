@@ -2,9 +2,14 @@ import React from 'react'
 
 const logs =(props) =>{
 
+    const mylogs = props.myLogs.map( log =>(
+        <p className="log">{log}</p>
+    ))
     return(
         <div className="logs">
-        Logs
+        <h3>Logs</h3>
+            {mylogs}
+     
         </div>
     )
 }
