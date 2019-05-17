@@ -35,3 +35,4 @@ Also configure your firebase project
 
 You are ready to go :wink:
 
+<img src="screenshot/dashboard.JPG" width=800px>
